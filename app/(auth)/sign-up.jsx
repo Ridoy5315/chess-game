@@ -1,5 +1,5 @@
 import * as React from 'react'
-import { Text, TextInput, TouchableOpacity, View, StyleSheet, Image, ActivityIndicator } from 'react-native'
+import { Text, TextInput, TouchableOpacity, View, StyleSheet, ActivityIndicator } from 'react-native'
 import { useSignUp } from '@clerk/clerk-expo'
 import { Link, useRouter } from 'expo-router'
 
@@ -14,8 +14,8 @@ export default function Page() {
   const [isLoading, setIsLoading] = React.useState(false)
   const [errors, setErrors] = React.useState({})
 
-  // Handle submission of sign-up form
-  const onSignUpPress = async () => {
+  // Sign up
+  const handleSignUp = async () => {
     if (!isLoaded) return
     setIsLoading(true)
     setErrors({})
@@ -107,10 +107,8 @@ export default function Page() {
 
   return (
     <View style={styles.container}>
-      <View style={styles.header}>
-        
+      <View style={styles.header}> 
         <Text style={styles.title}>Create Account</Text>
-        <Text style={styles.subtitle}>Join our chess community</Text>
       </View>
 
       <View style={styles.form}>
@@ -139,7 +137,7 @@ export default function Page() {
 
         <TouchableOpacity 
           style={styles.button} 
-          onPress={onSignUpPress}
+          onPress={handleSignUp}
           disabled={isLoading}
         >
           {isLoading ? (
@@ -176,11 +174,6 @@ const styles = StyleSheet.create({
     fontWeight: 'bold',
     color: '#2d3748',
     marginBottom: 8,
-  },
-  subtitle: {
-    fontSize: 16,
-    color: '#718096',
-    textAlign: 'center',
   },
   form: {
     width: '100%',

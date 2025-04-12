@@ -15,6 +15,18 @@ const CalendarScreen = () => {
     markedDates[game.date] = {
       marked: true,
       dotColor: game.result === 'Success' ? 'green' : 'red',
+      selected: true,
+      selectedColor: '#e0f0ff', 
+      customStyles: {
+        container: {
+          backgroundColor: '#f0f8ff',
+          borderRadius: 20,
+        },
+        text: {
+          color: '#2d4150',
+          fontWeight: 'bold',
+        },
+      },
     };
   });
 
@@ -40,25 +52,26 @@ const CalendarScreen = () => {
 
   return (
     <View style={styles.container}>
-      {/* Week View - Clickable area to toggle calendar */}
+      {/* Week View */}
       <TouchableOpacity 
         onPress={() => setIsCalendarVisible(!isCalendarVisible)}
         style={styles.weekContainer}
       >
         <View style={styles.weekRow}>
-          {['S', 'M', 'T', 'W', 'T', 'F', 'S'].map((day) => (
+          {['Sun', 'Mon', 'Tue', 'Wed', 'Thu', 'Fri', 'Sat'].map((day) => (
             <Text key={day} style={styles.dayHeader}>{day}</Text>
           ))}
         </View>
         <View style={styles.weekRow}>
           {currentWeek.map((date) => {
             const dateStr = formatDate(date);
+            const hasHistory = markedDates[dateStr] !== undefined;
             return (
               <TouchableOpacity 
                 key={dateStr}
                 style={[
                   styles.dayCell,
-                  markedDates[dateStr] && styles.markedDay,
+                  hasHistory && styles.hasHistoryDay,
                   selectedGames[0]?.date === dateStr && styles.selectedDay
                 ]}
                 onPress={(e) => {
@@ -68,7 +81,7 @@ const CalendarScreen = () => {
                 }}
               >
                 <Text style={styles.dayText}>{date.getDate()}</Text>
-                {markedDates[dateStr] && (
+                {hasHistory && (
                   <View style={[
                     styles.dot, 
                     { backgroundColor: markedDates[dateStr].dotColor }
@@ -169,6 +182,9 @@ const styles = StyleSheet.create({
     color: '#999',
     fontSize: 16,
     marginTop: 20,
+  },
+  hasHistoryDay: {
+    backgroundColor: '#5f9ea0', 
   },
   calendarOverlay: {
     position: 'absolute',

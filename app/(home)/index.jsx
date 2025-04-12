@@ -8,7 +8,7 @@ export default function Page() {
     <>
       <Stack.Screen
         options={{
-          header: () => <Header />, // Use our custom header
+          header: () => <Header />, 
           headerShadowVisible: false,
         }}
       />

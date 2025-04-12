@@ -1,9 +1,9 @@
 import { useSignIn } from '@clerk/clerk-expo'
 import { Link, useRouter } from 'expo-router'
-import { Text, TextInput, TouchableOpacity, View, StyleSheet, Image } from 'react-native'
+import { Text, TextInput, TouchableOpacity, View, StyleSheet } from 'react-native'
 import React from 'react'
 
-export default function Page() {
+const signIn = () => {
   const { signIn, setActive, isLoaded } = useSignIn()
   const router = useRouter()
 
@@ -11,7 +11,8 @@ export default function Page() {
   const [password, setPassword] = React.useState('')
   const [isLoading, setIsLoading] = React.useState(false)
 
-  const onSignInPress = React.useCallback(async () => {
+  //sign in account
+  const handleSignIn = React.useCallback(async () => {
     if (!isLoaded) return
     setIsLoading(true)
 
@@ -38,7 +39,6 @@ export default function Page() {
   return (
     <View style={styles.container}>
       <View style={styles.header}>
-        <Text style={styles.title}>Welcome Back</Text>
         <Text style={styles.subtitle}>Sign in to your chess account</Text>
       </View>
 
@@ -64,7 +64,7 @@ export default function Page() {
 
         <TouchableOpacity 
           style={styles.button} 
-          onPress={onSignInPress}
+          onPress={handleSignIn}
           disabled={isLoading}
         >
           <Text style={styles.buttonText}>
@@ -95,20 +95,10 @@ const styles = StyleSheet.create({
     alignItems: 'center',
     marginBottom: 40,
   },
-  logo: {
-    width: 80,
-    height: 80,
-    marginBottom: 16,
-  },
-  title: {
-    fontSize: 28,
-    fontWeight: 'bold',
-    color: '#2d3748',
-    marginBottom: 8,
-  },
   subtitle: {
-    fontSize: 16,
-    color: '#718096',
+    fontSize: 20,
+    color: '#2d3748',
+    fontWeight: 'bold',
   },
   form: {
     width: '100%',
@@ -153,3 +143,5 @@ const styles = StyleSheet.create({
     fontWeight: '600',
   },
 })
+
+export default signIn;
