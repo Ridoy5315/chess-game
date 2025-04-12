@@ -1,7 +1,7 @@
 [
      {
        "id": "1",
-       "date": "2025-03-15",
+       "date": "2025-04-10",
        "players": {
          "white": "Mike",
          "black": "Lily"
@@ -14,7 +14,7 @@
      },
      {
        "id": "2",
-       "date": "2025-03-18",
+       "date": "2025-04-08",
        "players": {
          "white": "Alice",
          "black": "Bob"
@@ -24,5 +24,205 @@
        "mode": "Online",
        "tags": ["Dragon Variation"],
        "fen": "rnbqkbnr/pp1ppppp/8/2p5/4P3/8/PPPP1PPP/RNBQKBNR w KQkq - 0 1"
-     }
+     },
+     {
+      "id": "3",
+      "date": "2025-04-01",
+      "players": { "white": "John", "black": "David" },
+      "result": "Success",
+      "opening": "King's Gambit",
+      "mode": "Local",
+      "tags": ["Gambit", "Aggressive"],
+      "fen": "rnbqkbnr/pppp1ppp/8/4p3/5P2/8/PPPPP1PP/RNBQKBNR b KQkq f3 0 2"
+    },
+    {
+      "id": "4",
+      "date": "2025-04-10",
+      "players": { "white": "Emma", "black": "Noah" },
+      "result": "Failure",
+      "opening": "French Defense",
+      "mode": "Online",
+      "tags": ["Closed Game"],
+      "fen": "rnbqkbnr/pppp1ppp/8/4p3/3P4/8/PPP1PPPP/RNBQKBNR b KQkq - 0 2"
+    },
+    {
+      "id": "5",
+      "date": "2025-04-08",
+      "players": { "white": "Sophia", "black": "Liam" },
+      "result": "Success",
+      "opening": "Caro-Kann Defense",
+      "mode": "Local",
+      "tags": ["Solid", "Defense"],
+      "fen": "rnbqkbnr/pp2pppp/2p5/3p4/3P4/2N5/PPP1PPPP/R1BQKBNR b KQkq - 0 3"
+    },
+    {
+      "id": "6",
+      "date": "2025-04-10",
+      "players": { "white": "Olivia", "black": "James" },
+      "result": "Failure",
+      "opening": "Queen's Gambit",
+      "mode": "Online",
+      "tags": ["Queen's Gambit"],
+      "fen": "rnbqkbnr/ppp2ppp/8/3pp3/2P5/5N2/PP1PPPPP/RNBQKB1R w KQkq - 0 3"
+    },
+    {
+      "id": "7",
+      "date": "2025-03-10",
+      "players": { "white": "Lucas", "black": "Mia" },
+      "result": "Success",
+      "opening": "Ruy Lopez",
+      "mode": "Online",
+      "tags": ["Classical", "e4 e5"],
+      "fen": "r1bqkbnr/pppp1ppp/2n5/1B2p3/4P3/5N2/PPPP1PPP/RNBQK2R b KQkq - 3 3"
+    },
+    {
+      "id": "8",
+      "date": "2025-03-05",
+      "players": { "white": "Henry", "black": "Ava" },
+      "result": "Success",
+      "opening": "Scandinavian Defense",
+      "mode": "Local",
+      "tags": ["Center Control"],
+      "fen": "rnbqkbnr/ppp1pppp/8/3p4/3P4/8/PPP1PPPP/RNBQKBNR w KQkq - 0 3"
+    },
+    {
+      "id": "9",
+      "date": "2025-02-14",
+      "players": { "white": "Isabella", "black": "Ethan" },
+      "result": "Failure",
+      "opening": "Pirc Defense",
+      "mode": "Local",
+      "tags": ["Hypermodern"],
+      "fen": "rnbqkb1r/pppppp1p/5np1/8/3P4/2N5/PPP1PPPP/R1BQKBNR b KQkq - 2 3"
+    },
+    {
+      "id": "10",
+      "date": "2025-03-18",
+      "players": { "white": "Alexander", "black": "Emily" },
+      "result": "Success",
+      "opening": "English Opening",
+      "mode": "Online",
+      "tags": ["Positional"],
+      "fen": "rnbqkbnr/pppppppp/8/8/2P5/5N2/PP1PPPPP/RNBQKB1R b KQkq - 1 2"
+    },
+    {
+      "id": "11",
+      "date": "2025-04-02",
+      "players": { "white": "Jack", "black": "Harper" },
+      "result": "Failure",
+      "opening": "Dutch Defense",
+      "mode": "Online",
+      "tags": ["Aggressive"],
+      "fen": "rnbqkbnr/pppppppp/8/8/4P3/5N2/PPPP1PPP/RNBQKB1R b KQkq - 1 2"
+    },
+    {
+      "id": "12",
+      "date": "2025-04-03",
+      "players": { "white": "Evelyn", "black": "Benjamin" },
+      "result": "Success",
+      "opening": "Grünfeld Defense",
+      "mode": "Local",
+      "tags": ["Hypermodern", "d4"],
+      "fen": "rnbqk2r/ppp1ppbp/6p1/3n4/3P4/2N1P3/PPP2PPP/R1BQKBNR w KQkq - 2 5"
+    },
+    {
+      "id": "13",
+      "date": "2025-03-28",
+      "players": { "white": "Logan", "black": "Abigail" },
+      "result": "Failure",
+      "opening": "Nimzo-Indian Defense",
+      "mode": "Online",
+      "tags": ["Indian Defense"],
+      "fen": "r1bqk1nr/pppp1ppp/2n5/4p3/2B1P3/5N2/PPPP1PPP/RNBQK2R b KQkq - 3 4"
+    },
+    {
+      "id": "14",
+      "date": "2025-03-07",
+      "players": { "white": "Chloe", "black": "William" },
+      "result": "Success",
+      "opening": "Vienna Game",
+      "mode": "Local",
+      "tags": ["e4 Opening"],
+      "fen": "rnbqkbnr/pppp1ppp/8/4p3/2B1P3/8/PPPP1PPP/RNBQK1NR b KQkq - 2 3"
+    },
+    {
+      "id": "15",
+      "date": "2025-02-22",
+      "players": { "white": "Daniel", "black": "Ella" },
+      "result": "Failure",
+      "opening": "Alekhine's Defense",
+      "mode": "Online",
+      "tags": ["Unorthodox"],
+      "fen": "rnbqkb1r/pppppppp/5n2/8/3PP3/8/PPP2PPP/RNBQKBNR b KQkq - 0 3"
+    },
+    {
+      "id": "16",
+      "date": "2025-01-17",
+      "players": { "white": "Matthew", "black": "Grace" },
+      "result": "Success",
+      "opening": "Benoni Defense",
+      "mode": "Online",
+      "tags": ["Aggressive"],
+      "fen": "rnbqkbnr/pp3ppp/4p3/2pp4/3P4/5N2/PPP1PPPP/RNBQKB1R w KQkq - 0 4"
+    },
+    {
+      "id": "17",
+      "date": "2025-02-27",
+      "players": { "white": "Victoria", "black": "Joseph" },
+      "result": "Failure",
+      "opening": "Modern Defense",
+      "mode": "Local",
+      "tags": ["fianchetto"],
+      "fen": "rnbqkbnr/pppppp1p/6p1/8/4P3/5N2/PPPP1PPP/RNBQKB1R b KQkq - 0 2"
+    },
+    {
+      "id": "18",
+      "date": "2025-03-12",
+      "players": { "white": "Sebastian", "black": "Scarlett" },
+      "result": "Success",
+      "opening": "King's Indian Defense",
+      "mode": "Local",
+      "tags": ["Indian Defense"],
+      "fen": "rnbqkb1r/pppppp1p/5np1/8/2P5/5N2/PP1PPP1P/RNBQKB1R b KQkq - 0 3"
+    },
+    {
+      "id": "19",
+      "date": "2025-04-05",
+      "players": { "white": "Aria", "black": "Anthony" },
+      "result": "Failure",
+      "opening": "Philidor Defense",
+      "mode": "Online",
+      "tags": ["Solid"],
+      "fen": "rnbqkbnr/ppp1pppp/3p4/8/4P3/8/PPPP1PPP/RNBQKBNR w KQkq - 0 3"
+    },
+    {
+      "id": "20",
+      "date": "2025-03-22",
+      "players": { "white": "Dylan", "black": "Luna" },
+      "result": "Success",
+      "opening": "London System",
+      "mode": "Local",
+      "tags": ["Solid", "d4"],
+      "fen": "rnbqkb1r/pppppppp/5n2/8/3P2P1/5N2/PPP1PP1P/RNBQKB1R b KQkq - 0 3"
+    },
+    {
+      "id": "21",
+      "date": "2025-04-09",
+      "players": { "white": "Ella", "black": "Logan" },
+      "result": "Failure",
+      "opening": "Trompowsky Attack",
+      "mode": "Online",
+      "tags": ["Offbeat"],
+      "fen": "rnbqkbnr/pppppppp/8/8/3P1B2/8/PPP1PPPP/RN1QKBNR b KQkq - 1 2"
+    },
+    {
+      "id": "22",
+      "date": "2025-03-29",
+      "players": { "white": "Zoe", "black": "Elijah" },
+      "result": "Success",
+      "opening": "Italian Game",
+      "mode": "Local",
+      "tags": ["Classical"],
+      "fen": "rnbqkbnr/pppp1ppp/8/4p3/2B1P3/5N2/PPPP1PPP/RNBQK2R b KQkq - 2 3"
+    }
    ]

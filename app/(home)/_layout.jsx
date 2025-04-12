@@ -1,5 +1,5 @@
-import { Redirect, Stack } from 'expo-router';
-import { useAuth } from '@clerk/clerk-expo';
+import { Redirect, Stack } from "expo-router";
+import { useAuth } from "@clerk/clerk-expo";
 
 export default function HomeLayout() {
   const { isSignedIn } = useAuth();
@@ -8,5 +8,13 @@ export default function HomeLayout() {
     return <Redirect href="/(auth)/sign-in" />;
   }
 
-  return <Stack />;
+  return (
+    <Stack
+      screenOptions={{
+        // These options apply to ALL screens in (home) group
+        headerTitle: '', // Remove default (home) text
+        headerBackTitleVisible: false, // Hide back button text
+      }}
+    />
+  );
 }
