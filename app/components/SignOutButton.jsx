@@ -2,7 +2,7 @@ import { useClerk } from '@clerk/clerk-expo'
 import * as Linking from 'expo-linking'
 import { Text, TouchableOpacity, StyleSheet } from 'react-native'
 
-export const SignOutButton = () => {
+export const SignOutButton = ({style}) => {
   // Use `useClerk()` to access the `signOut()` function
   const { signOut } = useClerk()
 
@@ -19,8 +19,8 @@ export const SignOutButton = () => {
   }
 
   return (
-    <TouchableOpacity style={styles.button} onPress={handleSignOut}>
-      <Text style={styles.buttonText}>Sign out</Text>
+    <TouchableOpacity style={[styles.button, style]} onPress={handleSignOut}>
+      <Text style={styles.buttonText}>Log out</Text>
     </TouchableOpacity>
   )
 }
@@ -30,11 +30,11 @@ const styles = StyleSheet.create({
     backgroundColor: '#ff4444',
     padding: 10,
     borderRadius: 5,
-    margin: 10,
     alignSelf: 'center',
   },
   buttonText: {
     color: 'white',
     fontWeight: 'bold',
+    fontSize: 14,
   },
 });

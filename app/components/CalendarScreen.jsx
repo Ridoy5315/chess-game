@@ -5,8 +5,8 @@ import HistoryDetails from './HistoryDetails';
 import historyData from '@/app/constants/historyData.json';
 
 const CalendarScreen = () => {
-  const [selectedGames, setSelectedGames] = useState([]); // Changed to array
-  const [selectedDate, setSelectedDate] = useState(null); // Track selected date
+  const [selectedGames, setSelectedGames] = useState([]); 
+  const [selectedDate, setSelectedDate] = useState(null); 
 
   // Prepare marked dates
   const markedDates = {};
