@@ -10,7 +10,7 @@ const HistoryDetails = ({ games }) => {
       <Text style={styles.title}>Game Details ({games.length})</Text>
       <ScrollView>
         {games.map((game, index) => (
-          <View key={game.id || index} style={styles.gameContainer}>
+          <View key={game.id || index} >
             <View style={styles.gridContainer}>
               {/* Left Column - Chess Board */}
               <View style={styles.boardColumn}>
@@ -70,12 +70,10 @@ const HistoryDetails = ({ games }) => {
 };
 
 const styles = StyleSheet.create({
-  gameContainer: {
-    marginBottom: 15,
-  },
+
   gridContainer: {
     flexDirection: 'row',
-    gap: 20,
+    gap: 30,
     alignItems: 'center',
     padding: 15,
   },
@@ -90,7 +88,6 @@ const styles = StyleSheet.create({
     fontSize: 20,
     fontWeight: 'bold',
     marginBottom: 5,
-    marginTop: 15,
     color: '#5f9ea0',
     textAlign: 'center',
     paddingHorizontal: 15,
@@ -117,7 +114,7 @@ const styles = StyleSheet.create({
     height: 1,
     backgroundColor: '#ddd',
     marginHorizontal: 15,
-    marginVertical: 10,
+    marginVertical: 5,
   },
 });
 

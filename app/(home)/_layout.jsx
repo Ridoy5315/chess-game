@@ -11,9 +11,7 @@ export default function HomeLayout() {
   return (
     <Stack
       screenOptions={{
-        // These options apply to ALL screens in (home) group
-        headerTitle: '', // Remove default (home) text
-        headerBackTitleVisible: false, // Hide back button text
+        header: () => null,
       }}
     />
   );

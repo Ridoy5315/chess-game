@@ -7,7 +7,12 @@ const RootLayout = () => {
     <ClerkProvider tokenCache={tokenCache}>
       <Stack
         screenOptions={{
-          header: () => null,
+          headerTitle: "", // Global fallback
+          headerLeft: () => null,
+          headerLeft: () => null,
+          headerLeftContainerStyle: { display: "none" },
+          headerTitleContainerStyle: { left: 0, right: 0 },
+          headerStyle: { paddingLeft: 0, paddingRight: 0 },
           
         }}
       />

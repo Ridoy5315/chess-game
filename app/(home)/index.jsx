@@ -1,9 +1,8 @@
-import { SignedIn, SignedOut, useUser } from "@clerk/clerk-expo";
+import { SignedIn, SignedOut } from "@clerk/clerk-expo";
 import { Link, Stack } from "expo-router";
 import { Text, View } from "react-native";
-import Header from "@/app/components/Header";
 import CalendarScreen from "@/app/components/CalendarScreen";
-
+import Header from "@/app/components/Header";
 export default function Page() {
   return (
     <>
