@@ -15,18 +15,11 @@ export default function Page() {
         }}
       />
       <View style={{ flex: 1 }}>
-        {/* <Stack.Screen 
-        options={{ 
-          title: "March 2025", // Custom title
-          headerTitleAlign: "center", // Center the text
-        }} 
-      /> */}
         <SignedIn>
           <CalendarScreen />
           <Text>Hello {user?.emailAddresses[0].emailAddress}</Text>
           <SignOutButton />
         </SignedIn>
-        <Text>Hello</Text>
         <SignedOut>
           <Link href="/(auth)/sign-in">
             <Text>Sign in</Text>

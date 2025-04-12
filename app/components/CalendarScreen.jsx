@@ -5,7 +5,8 @@ import HistoryDetails from './HistoryDetails';
 import historyData from '@/app/constants/historyData.json';
 
 const CalendarScreen = () => {
-  const [selectedGame, setSelectedGame] = useState(null);
+  const [selectedGames, setSelectedGames] = useState([]); // Changed to array
+  const [selectedDate, setSelectedDate] = useState(null); // Track selected date
 
   // Prepare marked dates
   const markedDates = {};
@@ -24,8 +25,9 @@ const CalendarScreen = () => {
         markedDates={markedDates}
         markingType={'multi-dot'}
         onDayPress={(day) => {
-          const game = historyData.find(g => g.date === day.dateString);
-          setSelectedGame(game || null);
+          const gamesForDate = historyData.filter(g => g.date === day.dateString);
+          setSelectedGames(gamesForDate);
+          setSelectedDate(day.dateString);
         }}
         theme={{
           calendarBackground: '#ffffff',
@@ -37,7 +39,12 @@ const CalendarScreen = () => {
         }}
       />
       
-      {selectedGame && <HistoryDetails game={selectedGame} />}
+      {selectedGames.length > 0 && (
+        <HistoryDetails 
+          games={selectedGames} 
+          date={selectedDate} 
+        />
+      )}
     </View>
   );
 };
